@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Ofimatica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Fondo negro */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Fondo oscuro */
+            color: #E0E0E0; /* Texto en color claro para contraste */
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-weight: 300;
+        }
+
+        header p2 {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        nav {
+            background-color: #1e1e1e; /* Color oscuro para el menú */
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #E0E0E0; /* Color claro para el texto */
+            text-align: center;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333; /* Fondo oscuro al pasar el cursor */
+            color: #1e88e5; /* Azul claro al pasar el cursor */
+        }
+
+        .content {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 25px;
+            background-color: #1E1E1E; /* Fondo oscuro para el contenido */
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section {
+            background-color: #1E1E1E;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #1e88e5;
+        }
+
+        .welcome-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #bbb; /* Texto gris para mejor contraste */
+        }
+
+        h2 {
+            color: #1e88e5;
+            margin-bottom: 20px;
+        }
+
+        .resources-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .resources-list li {
+            background-color: #333; /* Fondo oscuro para las listas */
+            margin: 12px 0;
+            padding: 18px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .resources-list li:hover {
+            transform: scale(1.03);
+            background-color: #444;
+        }
+
+        .resources-list li a {
+            text-decoration: none;
+            color: #E0E0E0; /* Texto en color claro */
+            font-size: 1.2em;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .resources-list li a:hover {
+            color: #1e88e5;
+        }
+
+        /* Estilo para las definiciones ocultas */
+        .definition {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333; /* Fondo oscuro para las definiciones */
+            border-radius: 8px;
+            font-size: 1.1em;
+            color: #bbb; /* Texto en gris claro */
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2e7d32;
+            color: white;
+            margin-top: 40px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            nav a {
+                padding: 14px 20px;
+            }
+
+            .content {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Curso de Ofimatica</h1>
+        <p>Un proyecto para incentivar la ofimática</p>
+        <p2>UTS</p2>
+    </header>
+
+    <nav>
+        <a href="#¿QUE ES LA OFIMATICA?">Bienvenida</a>
+        <a href="#temas">Herramientas</a>
+        <a href="#tutoriales">Tutoriales</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="content">
+
+        <section id="bienvenida" class="welcome-section">
+            <h2>¿Qué es la Ofimática?</h2>
+            <p>La ofimática se refiere al uso de herramientas de software que permiten realizar tareas administrativas y de oficina de manera eficiente. Estas herramientas incluyen procesadores de texto, hojas de cálculo, presentaciones y mucho más.</p>
+            <p>En esta página, aprenderás a dominar las herramientas más populares en el ámbito laboral y académico.</p>
+        </section>
+
+        <section id="temas">
+            <h2>Herramientas de Ofimática Más Comunes</h2>
+            <ul class="resources-list">
+                <li>   
+                    <a href="javascript:void(0);" onclick="toggleDefinition('word')">Microsoft Word: Procesador de Textos</a>
+                    <div id="word" class="definition">
+                        <p>Permite crear, editar y personalizar documentos de texto, ideal para la creación de informes, cartas y cualquier tipo de documento textual.</p>
+                        <ul>
+                            <li>Formato avanzado de texto, Esto permite que el origen del texto proporcione al formateador de texto ejecuciones de texto que incluyan datos personalizados.</li>
+                            <li>Inserción de tablas, gráficos y elementos multimedia, esto sirve para llenar varias cosas ya sea del trabajo o de tu vida diaria y hacerlo mas facil.</li>
+                            <li>Revisión ortográfica y gramática integrada, para no tener errores de ningun tipo y siempre ir confiado a la hora de entregar un trabajo.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleDefinition('excel')">Microsoft Excel: Hojas de Cálculo</a>
+                    <div id="excel" class="definition">
+                        <p>Herramienta para gestionar datos en tablas, realizar cálculos complejos y crear gráficos interactivos.</p>
+                        <ul>
+                            <li>Funciones matemáticas y estadísticas avanzadas, esta funcion nos ayuda hacer las tablas o operaciones mas sencillas.</li>
+                            <li>Creación de tablas dinámicas, interesante funcion para manejar bien todo en nuestro ambito laboral o escolar.</li>
+                            <li>Gráficos personalizables para el análisis de datos.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleDefinition('powerpoint')">Microsoft PowerPoint: Presentaciones</a>
+                    <div id="powerpoint" class="definition">
+                        <p>Herramienta utilizada para crear presentaciones visuales con diapositivas dinámicas.</p>
+                        <ul>
+                            <li>Ofrece una amplia variedad de plantillas prediseñadas con diseños profesionales y temáticas adaptadas para presentaciones de negocios, educación o eventos, facilitando la creación de diapositivas atractivas de manera rápid.</li>
+                            <li>Permite la inserción de animaciones y transiciones, lo que añade efectos visuales dinámicos entre diapositivas y dentro de ellas, mejorando la fluidez de la presentación y captando la atención del público.</li>
+                            <li>Ofrece compatibilidad con contenido multimedia, como videos y audio, lo que permite enriquecer las presentaciones con elementos visuales y sonoros, haciendo las diapositivas más interactivas y atractiva.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleDefinition('googleDocs')">Google Docs: Procesador de Textos en la Nube</a>
+                    <div id="googleDocs" class="definition">
+                        <p>Procesador de texto en línea que facilita la colaboración y edición en tiempo real.</p>
+                        <ul>
+                            <li>Permite el acceso desde cualquier dispositivo conectado a internet, lo que facilita la edición y visualización de documentos en tiempo real, sin importar la ubicación o el dispositivo que se esté utilizando.</li>
+                            <li>Dispone de un historial de cambios y revisiones, lo que permite realizar un seguimiento detallado de todas las modificaciones realizadas en el documento, y recuperar versiones anteriores cuando sea necesario.</li>
+                            <li>Ofrece integración con otras aplicaciones de Google, como Google Drive, Google Sheets y Google Slides, lo que permite compartir, colaborar y gestionar documentos de manera eficiente dentro del ecosistema de Google.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleDefinition('googleSheets')">Google Sheets: Hojas de Cálculo en la Nube</a>
+                    <div id="googleSheets" class="definition">
+                        <p>Hojas de cálculo accesibles desde cualquier navegador, ideales para la colaboración.</p>
+                        <ul>
+                            <li>Cuenta con fórmulas y funciones avanzadas, lo que permite realizar cálculos complejos, análisis de datos y automatización de tareas, facilitando la gestión y manipulación de grandes volúmenes de información en hojas de cálculo.</li>
+                            <li>Permite la creación de gráficos y tablas personalizados, facilitando la visualización de datos de manera clara y efectiva, y ayudando a presentar información de forma comprensible y atractiva.</li>
+                            <li>Ofrece la posibilidad de automatizar tareas mediante Google Apps Script, lo que permite crear secuencias de comandos personalizadas para optimizar procesos repetitivos y mejorar la eficiencia en el manejo de datos y funciones dentro de Google Sheets.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="tutoriales">
+            <h2>Tutoriales de Ofimática</h2>
+            <p>Accede a tutoriales detallados para aprender a usar las herramientas ofimáticas más populares. Aquí encontrarás guías paso a paso para mejorar tu productividad.</p>
+            <ul class="resources-list">
+                <li><a href="https://youtu.be/vH1o_091L0g" target="_blank">Tutorial: Cómo crear un documento en Microsoft Word</a></li>
+                <li><a href="https://youtu.be/5ZAim7aeMfM" target="_blank">Tutorial: Funciones básicas de Microsoft Excel</a></li>
+                <li><a href="https://youtu.be/YHqXHixp3P8" target="_blank">Tutorial: Crear una presentación efectiva en PowerPoint</a></li>
+                <li><a href="https://youtu.be/RxT97msDqiw" target="_blank">Tutorial: Google Docs</a></li>
+                <li><a href="https://youtu.be/YEgas6Ghgq0" target="_blank">Tutorial: Creación de hojas de cálculo en Google Sheets</a></li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes dudas o preguntas, no dudes en ponerte en contacto con nosotros.</p>
+            <p>Correo electrónico: <strong>carlosfelipevelascoreal@gmail.com,  michaelvilladiego23@gmail.com
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Carlos Felipe Velasco Hernandez, Michael Villadiego. Herramientas digitales.
+        <p>2024 UTS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+    
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofimática: las Herramientas de Oficina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Fondo negro con partículas */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #E0E0E0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Colocar detrás del contenido */
+        }
+
+        header {
+            background-color: rgba(46, 125, 50, 0.8); /* Transparencia */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-weight: 300;
+        }
+
+        header p2 {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(30, 30, 30, 0.8);
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #E0E0E0;
+            text-align: center;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #1e88e5;
+        }
+
+        .content {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 25px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: #1e88e5;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: rgba(46, 125, 50, 0.8);
+            color: white;
+            margin-top: 40px;
+            border-radius: 12px 12px 0 0;
+            backdrop-filter: blur(5px);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="background"></canvas
+    <footer>
+        <p>&copy; 2024 Carlos Felipe Velasco Hernandez, Michael Villadiego. Herramientas digitales.</p>
+        <p>2024 UTS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('background');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+
+            update() {
+                if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+                    this.directionX = -this.directionX;
+                }
+                if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+                    this.directionY = -this.directionY;
+                }
+                this.x += this.directionX;
+                this.y += this.directionY;
+                this.draw();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < 150; i++) {
+                const size = Math.random() * 3;
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const directionX = (Math.random() - 0.5) * 2;
+                const directionY = (Math.random() - 0.5) * 2;
+                const color = 'rgba(255, 255, 255, 0.5)';
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(particle => particle.update());
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+    </script>
+
+</body>
+</html>
